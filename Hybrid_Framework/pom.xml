@@ -41,18 +41,20 @@
 <artifactId>xmlbeans</artifactId>
 <version>2.3.0</version>
 </dependency>
- 		<dependency>
+<dependency>
        			 <groupId>org.seleniumhq.selenium</groupId>
         	       	<artifactId>selenium-java</artifactId>
 		         <version>2.52.0</version>
    		 </dependency>
-		<dependency>
-			<groupId>com.relevantcodes</groupId>
+<dependency>
+			<-- ! <groupId>com.relevantcodes</groupId> -->
+			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
-			<version>2.40.1</version>
+			<--!<version>2.40.1</version> -->
+			<version>3.1.2</version>
 		</dependency>
 <!--  Testng -->
-		<dependency>
+<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.9.6</version>
@@ -60,22 +62,21 @@
 		</dependency>
 
 		
-		<dependency>
+<dependency>
 			<groupId>org.apache.maven.surefire</groupId>
 			<artifactId>surefire</artifactId>
 			<version>2.18.1</version>
 			<type>pom</type>
 		</dependency>
-		<!--  Appium -->
-		
-		<dependency>
+<!--  Appium -->
+<dependency>
 			<groupId>io.appium</groupId>
 			<artifactId>java-client</artifactId>
 			<version>3.3.0</version>
-		</dependency>
+</dependency>
 		
 		
-		<dependency>
+<dependency>
 <groupId>com.google.code.gson</groupId>
 <artifactId>gson</artifactId>
 <version>2.2.4</version>
@@ -106,7 +107,7 @@
 	<version>1.4</version>
 </dependency>
 
-	</dependencies>
+</dependencies>
 </project>
 
 
