@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite C</th></tr><tr><th colspan="7">My suite</th></tr><tr><th colspan="7">Session Suite</th></tr><tr><td><a href="#t0">Change Password Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">1,698</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">Login Test</a></td><td class="num">1</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">45,613</td><td></td><td></td></tr><tr><th colspan="7">Product Suite</th></tr><tr><td><a href="#t2">Filter Mobile Test</a></td><td class="num">1</td><td class="num attn">1</td><td class="num">0</td><td class="num">45,518</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t3">Search and Buy Item Test Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">73,897</td><td></td><td></td></tr><tr><th>Total</th><th class="num">2</th><th class="num attn">3</th><th class="num attn">2</th><th class="num">166,726</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite C</th></tr></tbody><tbody><tr><th colspan="4">My suite</th></tr></tbody><tbody><tr><th colspan="4">Session Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Change Password Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.qtpselenium.hybrid.sessionsuite.ChangePasswordTest</td><td><a href="#m0">changePasswordTest</a></td><td rowspan="1">1469155220881</td><td rowspan="1">14</td></tr></tbody><tbody id="t1"><tr><th colspan="4">Login Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.qtpselenium.hybrid.sessionsuite.LoginTest</td><td><a href="#m1">quit</a></td><td rowspan="1">1469155265589</td><td rowspan="1">0</td></tr><tr><th colspan="4">Login Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qtpselenium.hybrid.sessionsuite.LoginTest</td><td><a href="#m2">loginTest</a></td><td rowspan="1">1469155257871</td><td rowspan="1">7718</td></tr><tr><th colspan="4">Login Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.qtpselenium.hybrid.sessionsuite.LoginTest</td><td><a href="#m3">quit</a></td><td rowspan="1">1469155265658</td><td rowspan="1">0</td></tr><tr><th colspan="4">Login Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.qtpselenium.hybrid.sessionsuite.LoginTest</td><td><a href="#m4">loginTest</a></td><td rowspan="1">1469155265658</td><td rowspan="1">0</td></tr><tr><th colspan="4">Login Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qtpselenium.hybrid.sessionsuite.LoginTest</td><td><a href="#m5">loginTest</a></td><td rowspan="1">1469155220890</td><td rowspan="1">36570</td></tr></tbody><tbody><tr><th colspan="4">Product Suite</th></tr></tbody><tbody id="t2"><tr><th colspan="4">Filter Mobile Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.qtpselenium.hybrid.product.FilterMobileTest</td><td><a href="#m6">filterMobileTest</a></td><td rowspan="1">1469155265528</td><td rowspan="1">1</td></tr><tr><th colspan="4">Filter Mobile Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qtpselenium.hybrid.product.FilterMobileTest</td><td><a href="#m7">filterMobileTest</a></td><td rowspan="1">1469155220892</td><td rowspan="1">44334</td></tr></tbody><tbody id="t3"><tr><th colspan="4">Search and Buy Item Test Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qtpselenium.hybrid.product.SearchAndBuyItemTest</td><td><a href="#m8">filterMobileTest</a></td><td rowspan="1">1469155220889</td><td rowspan="1">72772</td></tr></tbody></table><h2>Change Password Test</h2><h3 id="m0">com.qtpselenium.hybrid.sessionsuite.ChangePasswordTest#changePasswordTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{NewPassword=selenium@1234, OldPassword=pass@1234, ExpectedResult=Success, Runmode=Y, Browser=Mozilla}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Skipping the test as runmode is N
+	at com.qtpselenium.hybrid.sessionsuite.ChangePasswordTest.changePasswordTest(ChangePasswordTest.java:38)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Login Test</h2><h3 id="m1">com.qtpselenium.hybrid.sessionsuite.LoginTest#quit</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.qtpselenium.hybrid.GenericKeywords.closeBrowser(GenericKeywords.java:112)
+	at com.qtpselenium.hybrid.base.BaseTest.quit(BaseTest.java:29)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.qtpselenium.hybrid.sessionsuite.LoginTest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=U2, ExpectedResult=Success, Password=P2, Runmode=Y, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.qtpselenium.hybrid.GenericKeywords.openBrowser(GenericKeywords.java:81)
+	at com.qtpselenium.hybrid.Keywords.executeKeywords(Keywords.java:51)
+	at com.qtpselenium.hybrid.sessionsuite.LoginTest.loginTest(LoginTest.java:47)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.qtpselenium.hybrid.sessionsuite.LoginTest#quit</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">com.qtpselenium.hybrid.sessionsuite.LoginTest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=U3, ExpectedResult=x, Password=P3, Runmode=N, Browser=Mozilla}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">com.qtpselenium.hybrid.sessionsuite.LoginTest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=its.thakur@gmail.com, ExpectedResult=Success, Password=pass@1234, Runmode=Y, Browser=Mozilla}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Filter Mobile Test</h2><h3 id="m6">com.qtpselenium.hybrid.product.FilterMobileTest#filterMobileTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{PriceRange=Rs. 5001 - Rs. 10000, Runmode=N, MobileCompany=samsung_xpath, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Skipping the test as runmode is N
+	at com.qtpselenium.hybrid.product.FilterMobileTest.filterMobileTest(FilterMobileTest.java:37)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">com.qtpselenium.hybrid.product.FilterMobileTest#filterMobileTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{PriceRange=Rs. 5001 - Rs. 10000, Runmode=Y, MobileCompany=samsung_xpath, Browser=Mozilla}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Search and Buy Item Test Test</h2><h3 id="m8">com.qtpselenium.hybrid.product.SearchAndBuyItemTest#filterMobileTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Runmode=Y, ItemName=Lenovo Z Z51-70 Core i7 - (8 GB/1 TB HDD, SearchTerm=lenovo laptops, Browser=Mozilla}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Element is not clickable at point (534.5, 21). Other element would receive the click: &lt;span class=&quot;vmiddle&quot;&gt;&lt;/span&gt;
+Command duration or timeout: 79 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;a-PC&apos;, ip: &apos;192.168.170.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_05&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 183eb8dc-d3c7-4cc5-ad95-598dc4ee8488
+Command duration or timeout: 348 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;a-PC&apos;, ip: &apos;192.168.170.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_05&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=65ad47d6-57b1-40d8-b392-7414223beee0, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 65ad47d6-57b1-40d8-b392-7414223beee0
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.qtpselenium.hybrid.AppKeywords.searchMobileAndSelect(AppKeywords.java:148)
+	at com.qtpselenium.hybrid.Keywords.executeKeywords(Keywords.java:77)
+	at com.qtpselenium.hybrid.product.SearchAndBuyItemTest.filterMobileTest(SearchAndBuyItemTest.java:37)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;a-PC&apos;, ip: &apos;192.168.170.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_05&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+	... 26 more
+Caused by: org.openqa.selenium.WebDriverException: Element is not clickable at point (534.5, 21). Other element would receive the click: &lt;span class=&quot;vmiddle&quot;&gt;&lt;/span&gt;
+Command duration or timeout: 79 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;a-PC&apos;, ip: &apos;192.168.170.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_05&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 183eb8dc-d3c7-4cc5-ad95-598dc4ee8488
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;a-PC&apos;, ip: &apos;192.168.170.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_05&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:335)
+	at com.sun.proxy.$Proxy2.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:348)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy3.click(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.ClickElement.call(ClickElement.java:30)
+	at org.openqa.selenium.remote.server.handler.ClickElement.call(ClickElement.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
